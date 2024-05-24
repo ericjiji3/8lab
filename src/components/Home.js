@@ -27,7 +27,7 @@ export default function Home(){
             <div 
                     style={{
                     
-                            transform: `perspective(1000px) rotateY(${yDeg * 5}deg) rotateX(${xDeg * 5}deg) scale3d(1,1,1) translateX(-50%)`
+                            transform: `perspective(1000px) rotateY(${yDeg * 10}deg) rotateX(${xDeg * 10}deg) scale3d(1,1,1) translateX(-50%)`
                         }} 
                     className="w-[30%] h-[75%] bg-blue fixed top-[15%] left-[50%] translate-x-[-50%] rounded-lg z-[1]"
                     onMouseMove={tiltRectange}

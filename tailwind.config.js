@@ -50,6 +50,20 @@ module.exports = {
         'lg': '30px',
         'full': '100px',
       },
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        reverseSpin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
+        }
+      },
+      animation: {
+        spin: 'spin 15s linear infinite',
+        reverseSpin: 'reverseSpin 15s linear infinite'
+      }
     },
   },
   plugins: [],
