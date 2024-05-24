@@ -17,12 +17,12 @@ export default function Info(){
                 <div className="flex-1">
                     <Image className="mb-[20px]" src={Achieve} height={40} alt="oops"/>
                     <h3 className="text-xl mb-[20px]">Achieve</h3>
-                    <span className="text-lg">If you aren't just about dreaming, but about making things happen</span>
+                    <span className="text-lg">If you aren&apos;t just about dreaming, but about making things happen</span>
                 </div>
                 <div className="flex-1">
                     <Image className="mb-[20px]" src={Impact} height={40} alt="oops"/>
                     <h3 className="text-xl mb-[20px]">Impact</h3>
-                    <span className="text-lg">If you want to see real-time examples and stories, so you don’t have to start from scratch</span>
+                    <span className="text-lg">If you want to see real-time examples and stories, so you don&apos;t have to start from scratch</span>
                 </div>
             </div>
         </div>
