@@ -106,20 +106,20 @@ export default function Learn(){
                     
                 >
                 </div>
-                <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={3000} endScroll={3250}>
+                <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={3700} endScroll={4150}>
                     <Image src={Human} width={220} alt="oops"/>
                 </Parallax>
-                <Parallax className="absolute top-[30%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={3350} endScroll={3600}>
+                <Parallax className="absolute top-[30%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={4150} endScroll={4400}>
                     <Image src={Brain} width={364} alt="oops"/>
                 </Parallax>
             </div>
             
             <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
-                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[1,0]} startScroll={3000} endScroll={3250}>
+                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[1,0]} startScroll={3700} endScroll={4250}>
                     <div>
-                        <h2 className="text-2xl mb-[5px]">At 8lab, we care a lot about people.</h2>
-                        <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3>
-                        <span className="text-lg">
+                        <h2 className="text-2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
+                        <h3 className="text-xl mb-[25px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
+                        <span className="text-lg font-kl font-[500]">
                         As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create, and collaborate. The commitment to people will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
                         </span>
                     </div>
@@ -128,12 +128,13 @@ export default function Learn(){
             </div>
 
             <div className="absolute z-[0] w-full h-[100dvh] top-[100dvh]">
-                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[0,1]} startScroll={3350} endScroll={3600}>
+                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[0,1]} startScroll={4150} endScroll={4500}>
                     <div>
-                        <h2 className="text-2xl mb-[5px]">At 8lab, we care a lot about people.</h2>
-                        <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3>
-                        <span className="text-lg">
-                        As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create, and collaborate. The commitment to people will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
+                        <h2 className="text-2xl mb-[25px] font-kl">We serve the people who like to think of new ideas and make them real.</h2>
+                        {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
+                        <span className="text-lg font-kl font-[500]">
+                        They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. they are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. we help them with the support they need so they can keep creating amazing things. 
+
                         </span>
                     </div>
                 </Parallax>

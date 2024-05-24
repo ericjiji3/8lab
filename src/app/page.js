@@ -7,7 +7,7 @@ import Apply from "@/components/Apply";
 
 export default function App() {
   return (
-    <main className="relative text-white">
+    <main className="relative text-white font-andalemo">
       <Header/>
       <Home/>
       <Info/>

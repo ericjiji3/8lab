@@ -17,11 +17,15 @@ module.exports = {
         'black': '#121212',
         'white': '#E4E4E4',
       },
+      fontFamily: {
+        andalemo: ['var(--font-andalemo)'],
+        kl: ['var(--font-kl)'],
+      },
       fontSize: {
-        'base': ['20px', {
+        'base': ['11px', {
           lineHeight: 'normal',
           letterSpacing: '0',
-          fontWeight: '400',
+          fontWeight: '500',
         }],
         'lg': ['20px', {
           lineHeight: 'normal',

@@ -44,12 +44,12 @@ export default function Home(){
             </div>
             <div className="h-lvh relative">
                 <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1]">
-                    <h2 className="text-2xl text-center">In the era of ai, we are still about the people.</h2>
+                    <h2 className="text-2xl text-center font-kl uppercase">In the era of ai, we are still about the people.</h2>
                 </div>
             </div>
             <div className="h-lvh relative">
                 <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1]">
-                    <h2 className="text-2xl text-center">8LAB IS A members-only network for people who want to grow and scale their creative ideas.</h2>
+                    <h2 className="text-2xl text-center font-kl uppercase">8LAB IS A members-only network for people who want to grow and scale their creative ideas.</h2>
                 </div>
             </div>
             
