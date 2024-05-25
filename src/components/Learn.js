@@ -141,7 +141,7 @@ export default function Learn(){
                     <div className="absolute w-[75%] md:h-[50%] h-[450px] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">
                     
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
-                    <Parallax className="w-[100%] relative px-[15px] py-[10px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
+                    <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
                             <h2 className="lg:text-2xl text-mobile2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
                             <h3 className="lg:text-xl text-mobilexl mb-[25px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
@@ -152,7 +152,7 @@ export default function Learn(){
                     </Parallax>
                     </div>
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
-                    <Parallax className="w-[100%] relative px-[15px] py-[10px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
+                    <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
                         <div>
                             <h2 className="lg:text-2xl text-mobile2xl mb-[25px] font-kl uppercase">We serve the people who like to think of new ideas and make them real.</h2>
                             {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}

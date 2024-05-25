@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "8 LAB",
   description: "IN THE ERA OF AI, WE ARE STILL ABOUT THE PEOPLE.",
+  icons: {
+    icon: '/8lab.png', // /public path
+  },
 };
 
 const andalemo = local({
@@ -63,9 +66,9 @@ const kl = local({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <link rel="shortcut icon" href="/favicon.ico"/>
-      </Head>
+      </Head> */}
       <body className={`${andalemo.variable} ${kl.variable} ${inter.className}`}>
         <Providers>
           <Header/>
