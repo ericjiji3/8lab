@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import local from 'next/font/local';
 import Header from "@/components/Header";
-
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,15 @@ export const metadata = {
   },
   // viewport: 'width=device-width, initial-scale=1, minimum-scale=1',
 };
-
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  minimumScale: 1,
+  userScalable: false,
+  // Also supported by less commonly used
+  // interactiveWidget: 'resizes-visual',
+}
 const andalemo = local({
   src: [
     {
@@ -67,9 +75,9 @@ const kl = local({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <Head>
+      <Head>
         <meta name="viewport" content="minimum-scale=1"/>
-      </Head> */}
+      </Head>
       <body className={`${andalemo.variable} ${kl.variable} ${inter.className}`}>
         <Providers>
           <Header/>
