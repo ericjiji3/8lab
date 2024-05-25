@@ -27,6 +27,16 @@ module.exports = {
           letterSpacing: '0',
           fontWeight: '500',
         }],
+        'mobilebase': ['14px', {
+          lineHeight: 'normal',
+          letterSpacing: '0',
+          fontWeight: '500',
+        }],
+        'mobilelg': ['16px', {
+          lineHeight: 'normal',
+          letterSpacing: '0',
+          fontWeight: '500',
+        }],
         'lg': ['20px', {
           lineHeight: 'normal',
           letterSpacing: '0',
@@ -43,6 +53,11 @@ module.exports = {
           fontWeight: '600',
         }],
         '2xl': ['50px', {
+          lineHeight: 'normal',
+          letterSpacing: '0',
+          fontWeight: '700',
+        }],
+        'mobile2xl': ['30px', {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '700',

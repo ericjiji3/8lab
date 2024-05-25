@@ -127,12 +127,12 @@ export default function Learn(){
                 :
                 <div className="relative w-full h-full">
                 <div className="sticky z-[1] top-0 pt-[100px] w-full px-[45px] h-dvh">
-                    <Parallax  className="absolute top-[50%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[1,0]} startScroll={top+100} endScroll={top + 350}>
+                    <Parallax  className="absolute top-[45%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[1,0]} startScroll={top+100} endScroll={top + 350}>
                         <Parallax opacity={[0,1]} startScroll={top-300} endScroll={top + 100}>
                             <Image className="absolute left-[10%] top-[17%]" src={Human} width={250} alt="oops"/>
                         </Parallax>
                     </Parallax>
-                    <Parallax  className="absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[0,1]} startScroll={top+350} endScroll={top + 600}>
+                    <Parallax  className="absolute left-[50%] translate-x-[-50%] top-[48%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[0,1]} startScroll={top+350} endScroll={top + 600}>
                         <Parallax opacity={[0,1]} startScroll={top + 100} endScroll={top + 300}>
                             <Image src={Brain} width={400} alt="oops"/>
                             <Image className="rotate-[180deg]" src={Brain} width={400} alt="oops"/>
@@ -141,22 +141,22 @@ export default function Learn(){
                     <div className="absolute w-[75%] h-[50%] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">
                     
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
-                    <Parallax className="w-[100%] relative px-[25px] py-[20px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
+                    <Parallax className="w-[100%] relative px-[15px] py-[10px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
-                            <h2 className="text-2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
-                            <h3 className="text-xl mb-[25px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
-                            <span className="text-lg font-kl font-[500]">
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
+                            <h3 className="lg:text-xl text-mobilexl mb-[25px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
+                            <span className="lg:text-lg text-mobilebase font-kl block font-[500] leading-[20px]">
                             As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create, and collaborate. The commitment to people will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
                             </span>
                         </div>
                     </Parallax>
                     </div>
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
-                    <Parallax className="w-[100%] relative px-[25px] py-[20px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
+                    <Parallax className="w-[100%] relative px-[15px] py-[10px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
                         <div>
-                            <h2 className="text-2xl mb-[25px] font-kl">We serve the people who like to think of new ideas and make them real.</h2>
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[25px] font-kl uppercase">We serve the people who like to think of new ideas and make them real.</h2>
                             {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
-                            <span className="text-lg font-kl font-[500]">
+                            <span className="lg:text-lg text-mobilebase font-kl block font-[500] leading-[20px]">
                             They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. they are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. we help them with the support they need so they can keep creating amazing things. 
 
                             </span>

@@ -11,10 +11,10 @@ export default function Apply(){
                 </div>
             </div>
             <div className="absolute block w-max top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-                <Image className="animate-spin lg:w-full w-[300px]" src={Humans} width={450} height={450} alt="oops"/>
+                <Image className="animate-spin lg:w-[450px] w-[300px]" src={Humans} width={450} height={450} alt="oops"/>
             </div>
             <div className="absolute block w-max top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-                <Image className="animate-reverseSpin lg:w-full w-[325px]" src={Text} width={500} height={500} alt="oops"/>
+                <Image className="animate-reverseSpin lg:w-[500px] w-[325px]" src={Text} width={500} height={500} alt="oops"/>
             </div>
             
         </div>

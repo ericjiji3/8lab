@@ -66,7 +66,7 @@ export default function Home(){
         <div className="px-[45px] relative bg-black">
  
             <div>
-            <Tilt className="lg:w-[30%] w-[80%] lg:h-[75%] h-[85%] bg-blue fixed lg:top-[15%] top-[10%] lg:left-[35%] left-[10%] translate-x-[-7.7%] rounded-lg z-[1] animate-fadeIn opacity-0">
+            <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[600px] bg-blue fixed lg:top-[15%] top-[17%] lg:left-[35%] left-[10%] translate-x-[-7.7%] rounded-lg z-[1] animate-fadeIn opacity-0">
             <div 
                     // style={{
                     
@@ -93,13 +93,13 @@ export default function Home(){
                     </Parallax>
                     
                 </div>
-                <div className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[250]">
+                <div className="fixed w-full h-fit lg:w-auto lg:h-auto top-[50%] left-[51%] lg:left-[50%] translate-x-[-50%] translate-y-[-50%] z-[250]">
                 {width >= 1024 ?
-                    <Parallax translateY={['0px', `-${(bottom / 2) - 35}px`]} scale={[1, 0.1]} startScroll={0} endScroll={bottom}>
+                    <Parallax translateY={['0px', `-${(bottom / 2) - 37.5}px`]} scale={[1, 0.2]} startScroll={0} endScroll={bottom}>
                         <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
                     </Parallax>
                     :
-                    <Parallax translateY={['0px', `-${(bottom / 2) - 40}px`]} scale={[1, 0.25]} startScroll={0} endScroll={bottom}>
+                    <Parallax className='fixed top-0' translateY={['0px', `-${(bottom / 2) - 7.5}px`]} scale={[1, 0.25]} startScroll={0} endScroll={bottom}>
                         <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
                     </Parallax>
                 }
