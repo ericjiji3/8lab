@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import local from 'next/font/local';
 import Header from "@/components/Header";
-import Head from "next/head";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +13,7 @@ export const metadata = {
   icons: {
     icon: '/8lab.png', // /public path
   },
+  // viewport: 'width=device-width, initial-scale=1, minimum-scale=1',
 };
 
 const andalemo = local({
@@ -67,7 +68,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <Head>
-        <link rel="shortcut icon" href="/favicon.ico"/>
+        <meta name="viewport" content="minimum-scale=1"/>
       </Head> */}
       <body className={`${andalemo.variable} ${kl.variable} ${inter.className}`}>
         <Providers>
