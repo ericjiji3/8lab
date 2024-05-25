@@ -6,12 +6,13 @@ import Image from "next/image";
 import Logo from '../../public/images/8lab.png';
 import Tilt from 'react-parallax-tilt';
 import { Parallax } from "react-scroll-parallax";
+import { Link, Element} from 'react-scroll';
 
 export default function Home(){
     const [xDeg,setXDeg] = useState(0);
     const [yDeg,setYDeg] = useState(0);
     const [bottom, setBottom] = useState(0);
-
+    const [width, setWidth] = useState(0);
     const [imgLoaded, setImgLoaded] = useState(false);
     const elRef = useRef(null);
     useEffect(() => {
@@ -22,7 +23,15 @@ export default function Home(){
             setBottom(elHeight);
             console.log(bottom);
         }
+        setWidth(window.innerWidth);
     }, [])
+    useEffect(() => {
+        const resize = () => {
+            setWidth(window.innerWidth);
+        };
+        document.addEventListener("resize", resize);
+        () => document.removeEventListener("resize", resize);
+    }, [width])
     useEffect(()=>{
         const resize = () => {
             if(elRef.current){
@@ -53,10 +62,11 @@ export default function Home(){
     }
 
     return(
-        <div className="px-[45px] relative">
+        <Element name="home">
+        <div className="px-[45px] relative bg-black">
  
             <div>
-            <Tilt className="w-[30%] h-[75%] bg-blue fixed top-[15%] left-[35%] translate-x-[-50%] rounded-lg z-[1] animate-fadeIn opacity-0">
+            <Tilt className="lg:w-[30%] w-[80%] lg:h-[75%] h-[85%] bg-blue fixed lg:top-[15%] top-[10%] lg:left-[35%] left-[10%] translate-x-[-7.7%] rounded-lg z-[1] animate-fadeIn opacity-0">
             <div 
                     // style={{
                     
@@ -76,32 +86,43 @@ export default function Home(){
             <div className="h-lvh relative" ref={elRef}>
                 <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1]">
                     
-                    <Parallax className="relative left-[50%] translate-x-[-50%] bg-black inline-block px-[25px] py-[5px] mt-[225px] rounded-lg" opacity={[1,0]} startScroll={0} endScroll={bottom/2}>
-                    <div>
+                    <Parallax className="relative left-[50%] translate-x-[-50%] bg-black inline-block px-[25px] py-[10px] mt-[225px] rounded-lg" opacity={[1,0]} startScroll={0} endScroll={bottom/2}>
+                    <div className="font-kl text-button">
                         APPLY NOW
                     </div>
                     </Parallax>
                     
                 </div>
-                <div className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[100]">
-                <Parallax translateY={['0px', `-${(bottom / 2) - 35}px`]} scale={[1, 0.1]} startScroll={0} endScroll={bottom}>
-                        <Image src={Logo} height={120} alt="logo"/>
-                </Parallax>
+                <div className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[250]">
+                {width >= 1024 ?
+                    <Parallax translateY={['0px', `-${(bottom / 2) - 35}px`]} scale={[1, 0.1]} startScroll={0} endScroll={bottom}>
+                        <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
+                    </Parallax>
+                    :
+                    <Parallax translateY={['0px', `-${(bottom / 2) - 40}px`]} scale={[1, 0.25]} startScroll={0} endScroll={bottom}>
+                        <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
+                    </Parallax>
+                }
+                
                 </div>
 
             </div>
-            <div className="h-lvh relative pointer-events-none">
-                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
-                    <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">In the era of ai, we are still about the people.</h2>
-                </div>
-            </div>
-            <div className="h-lvh relative pointer-events-none">
-                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
-                    <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB IS A members-only network for people who want to grow and scale their creative ideas.</h2>
-                </div>
-            </div>
+            <Element name="learn">
+                <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom/1.5} endScroll={bottom}>
+                    <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
+                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">In the era of ai, we are still about the people.</h2>
+                    </div>
+                </Parallax>
+                <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom} endScroll={bottom * 2}>
+                    <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
+                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB IS A members-only network for people who want to grow and scale their creative ideas.</h2>
+                    </div>
+                </Parallax>
+            </Element>
+            
             
 
         </div>
+        </Element>
     )
 }

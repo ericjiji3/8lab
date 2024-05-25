@@ -33,7 +33,7 @@ module.exports = {
           fontWeight: '500',
         }],
         'button': ['13px', {
-          lineHeight: 'normal',
+
           letterSpacing: '0',
           fontWeight: '500',
         }],
@@ -52,6 +52,7 @@ module.exports = {
         'sm' : '10px',
         'md': '20px',
         'lg': '30px',
+        'xl': '40px',
         'full': '100px',
       },
       keyframes: {
