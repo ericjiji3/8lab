@@ -66,7 +66,7 @@ export default function Home(){
         <div className="px-[45px] relative bg-black">
  
             <div>
-            <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[600px] bg-blue fixed lg:top-[15%] top-[17%] lg:left-[35%] left-[10%] translate-x-[-7.7%] rounded-lg z-[1] animate-fadeIn opacity-0">
+            <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[600px] bg-blue fixed lg:top-[15%] top-[10%] lg:left-[35%] left-[7.5%] translate-x-[-7.7%] rounded-lg z-[1] animate-fadeIn opacity-0">
             <div 
                     // style={{
                     
