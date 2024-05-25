@@ -1,36 +1,52 @@
 'use client';
 
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import React from 'react';
 import Image from "next/image";
 import Logo from '../../public/images/8lab.png';
 import Tilt from 'react-parallax-tilt';
-
-const defaultOptions = {
-	reverse:        false,  // reverse the tilt direction
-	max:            35,     // max tilt rotation (degrees)
-	perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-	scale:          1,    // 2 = 200%, 1.5 = 150%, etc..
-	speed:          1000,   // Speed of the enter/exit transition
-	transition:     true,   // Set a transition on enter/exit.
-	axis:           null,   // What axis should be disabled. Can be X or Y.
-	reset:          true,    // If the tilt effect has to be reset on exit.
-	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-}
+import { Parallax } from "react-scroll-parallax";
 
 export default function Home(){
     const [xDeg,setXDeg] = useState(0);
     const [yDeg,setYDeg] = useState(0);
+    const [bottom, setBottom] = useState(0);
 
+    const [imgLoaded, setImgLoaded] = useState(false);
+    const elRef = useRef(null);
+    useEffect(() => {
+        if(elRef.current){
+            let elDimensions = elRef.current.getBoundingClientRect();
+            console.log(elDimensions);
+            let elHeight = elDimensions.bottom - elDimensions.top;
+            setBottom(elHeight);
+            console.log(bottom);
+        }
+    }, [])
+    useEffect(()=>{
+        const resize = () => {
+            if(elRef.current){
+                let elDimensions = elRef.current.getBoundingClientRect();
+                let elHeight = elDimensions.bottom - elDimensions.top;
+                setBottom(elHeight);
+                console.log(bottom);
+            }
+        }
+        
+        document.addEventListener("resize", resize);
+        // remove event on unmount to prevent a memory leak
+        () => document.removeEventListener("resize", resize);
+      }, []);
     const tiltRectange = (e) =>{
         let rect = e.currentTarget.getBoundingClientRect();
         let x = e.clientX - rect.left;
         let y = e.clientY - rect.top;
         let middleX = (rect.left - rect.right) / 2;
-        let middleY = (rect.bottom - rect.top) / 2;
+        let middleY = (rect.top -rect.bottom) / 2;
 
         let offsetX = (e.clientX - middleX) / middleX;
         let offsetY = (middleY - e.clientY) / middleY;
+        console.log("offset X: ", offsetX, "ofset Y: ", offsetY);
         setXDeg(offsetX);
         setYDeg(offsetY);
 
@@ -38,7 +54,9 @@ export default function Home(){
 
     return(
         <div className="px-[45px] relative">
-            <Tilt className="w-[30%] h-[75%] bg-blue fixed top-[15%] left-[50%] translate-x-[-50%] rounded-lg z-[1]">
+ 
+            <div>
+            <Tilt className="w-[30%] h-[75%] bg-blue fixed top-[15%] left-[35%] translate-x-[-50%] rounded-lg z-[1] animate-fadeIn opacity-0">
             <div 
                     // style={{
                     
@@ -46,28 +64,40 @@ export default function Home(){
                     //     }} 
                     
                     // onMouseMove={tiltRectange}
-
+                    // className="w-[30%] h-[75%] bg-blue fixed top-[15%] left-[50%] translate-x-[-50%] rounded-lg z-[1]"
                     >
                 </div>
             </Tilt>
+            </div>
+
             
-            <div className="h-lvh relative">
+            
+            
+            <div className="h-lvh relative" ref={elRef}>
                 <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1]">
-                    <Image src={Logo} height={120} alt="logo"/>
-                    <div className="relative left-[50%] translate-x-[-50%] bg-black inline-block px-[25px] py-[5px] mt-[50px] rounded-lg">
+                    
+                    <Parallax className="relative left-[50%] translate-x-[-50%] bg-black inline-block px-[25px] py-[5px] mt-[225px] rounded-lg" opacity={[1,0]} startScroll={0} endScroll={bottom/2}>
+                    <div>
                         APPLY NOW
                     </div>
+                    </Parallax>
+                    
                 </div>
-                
+                <div className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[100]">
+                <Parallax translateY={['0px', `-${(bottom / 2) - 35}px`]} scale={[1, 0.1]} startScroll={0} endScroll={bottom}>
+                        <Image src={Logo} height={120} alt="logo"/>
+                </Parallax>
+                </div>
+
             </div>
-            <div className="h-lvh relative">
-                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1]">
-                    <h2 className="text-2xl text-center font-kl uppercase">In the era of ai, we are still about the people.</h2>
+            <div className="h-lvh relative pointer-events-none">
+                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
+                    <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">In the era of ai, we are still about the people.</h2>
                 </div>
             </div>
-            <div className="h-lvh relative">
-                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1]">
-                    <h2 className="text-2xl text-center font-kl uppercase">8LAB IS A members-only network for people who want to grow and scale their creative ideas.</h2>
+            <div className="h-lvh relative pointer-events-none">
+                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
+                    <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB IS A members-only network for people who want to grow and scale their creative ideas.</h2>
                 </div>
             </div>
             

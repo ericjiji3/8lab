@@ -11,7 +11,7 @@ export default function Header(){
                 <Image src={Ig} height={15} alt="oops"/>
                 <Image src={Twitter} height={15} alt="oops"/>
             </div>
-            <div className='flex gap-[15px] text-base font-kl weight-[700] non-italic'>
+            <div className='flex gap-[15px] text-base text-white font-kl weight-[700] non-italic'>
                 <a>ABOUT</a>
                 <a>APPLY</a>
                 <a>LEARN</a>

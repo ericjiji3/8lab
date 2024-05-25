@@ -4,14 +4,16 @@ import Header from "@/components/Header";
 import Info from "@/components/Info";
 import Learn from "@/components/Learn";
 import Apply from "@/components/Apply";
+import About from "@/components/About";
 
 export default function App() {
   return (
     <main className="relative text-white font-andalemo">
-      <Header/>
+      {/* <Header/> */}
       <Home/>
       <Info/>
       <Learn/>
+      <About/>
       <Apply/>
     </main>
   );

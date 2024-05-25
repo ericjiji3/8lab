@@ -6,7 +6,7 @@ import Human from '../../public/images/human2.png';
 import Brain from '../../public/images/brain.png';
 import { Parallax } from "react-scroll-parallax";
 import useDetectScroll from '@smakss/react-scroll-direction';
-
+import Tilt from 'react-parallax-tilt';
 
 export default function Learn(){
     const { scrollDir, scrollPosition } = useDetectScroll();
@@ -19,22 +19,16 @@ export default function Learn(){
 
     useEffect(() => {
         const options = { passive: true }; // options must match add/remove event
-        if(elRef.current){
-            let prevPos = elRef.current.getBoundingClientRect();
-            setTop(prevPos.top);
-            
-        }
-        
-        
+
         const scroll = (event) => {
          const { pageYOffset, scrollY } = window;
          console.log('yOffset', pageYOffset, 'scrollY', scrollY);
          if(elRef.current){
-            // let elDimensions = elRef.current.getBoundingClientRect();
-            // let elHeight = elDimensions.bottom - elDimensions.top;
-            // let elIncrement = elHeight / 20;
-            // let windowWidth = window.innerWidth;
-            // let windowIncrement = windowWidth / 20;
+            let elDimensions = elRef.current.getBoundingClientRect();
+            let elHeight = elDimensions.bottom - elDimensions.top;
+            let elIncrement = elHeight / 20;
+            let windowWidth = window.innerWidth;
+            let windowIncrement = windowWidth / 20;
 
             // prevTop.current = top;
             // setTop(elDimensions.top);
@@ -58,7 +52,8 @@ export default function Learn(){
             //     console.log('new2', xPos);
             //     console.log('window dith', newWidth2);
             // }
-            console.log(scrollDir);
+            console.log('elementPos', elRef.current.offsetTop);
+            setTop(elRef.current.offsetTop);
         }
         //  let newPos = (elDimensions.top - scrollY)
         };
@@ -97,7 +92,12 @@ export default function Learn(){
             
                 className="sticky z-[1] top-0 pt-[100px] w-full px-[45px] h-dvh"
                 >
-                <div 
+                <Tilt className="w-[30%] h-[75%] bg-blue sticky left-[100%] rounded-lg z-[1]">
+                    <div>
+
+                    </div>
+                </Tilt>
+                {/* <div 
                     style={{
                             transform: `perspective(1000px) translateX(${xPos}px) rotateY(${yDeg * 5}deg) rotateX(${xDeg * 5}deg) scale3d(1,1,1)`
                         }} 
@@ -105,17 +105,17 @@ export default function Learn(){
                     onMouseMove={tiltRectange}
                     
                 >
-                </div>
-                <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={3700} endScroll={4150}>
+                </div> */}
+                <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={top} endScroll={top + 400}>
                     <Image src={Human} width={220} alt="oops"/>
                 </Parallax>
-                <Parallax className="absolute top-[30%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={4150} endScroll={4400}>
+                <Parallax className="absolute top-[30%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={top + 400} endScroll={top + 700}>
                     <Image src={Brain} width={364} alt="oops"/>
                 </Parallax>
             </div>
             
             <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
-                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[1,0]} startScroll={3700} endScroll={4250}>
+                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                     <div>
                         <h2 className="text-2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
                         <h3 className="text-xl mb-[25px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
@@ -128,7 +128,7 @@ export default function Learn(){
             </div>
 
             <div className="absolute z-[0] w-full h-[100dvh] top-[100dvh]">
-                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[0,1]} startScroll={4150} endScroll={4500}>
+                <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[0,1]} startScroll={top + 350} endScroll={top + 700}>
                     <div>
                         <h2 className="text-2xl mb-[25px] font-kl">We serve the people who like to think of new ideas and make them real.</h2>
                         {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}

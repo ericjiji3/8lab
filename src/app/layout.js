@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import local from 'next/font/local';
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -61,7 +62,12 @@ const kl = local({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${andalemo.variable} ${kl.variable} ${inter.className}`}><Providers>{children}</Providers></body>
+      <body className={`${andalemo.variable} ${kl.variable} ${inter.className}`}>
+        <Providers>
+          <Header/>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }

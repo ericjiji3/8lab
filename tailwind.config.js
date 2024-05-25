@@ -62,11 +62,16 @@ module.exports = {
         reverseSpin: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(-360deg)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         }
       },
       animation: {
         spin: 'spin 15s linear infinite',
-        reverseSpin: 'reverseSpin 15s linear infinite'
+        reverseSpin: 'reverseSpin 15s linear infinite',
+        fadeIn: 'fadeIn 0.15s ease-in 1.5s forwards'
       }
     },
   },
