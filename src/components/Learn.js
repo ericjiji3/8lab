@@ -144,7 +144,7 @@ export default function Learn(){
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
                             <h2 className="lg:text-2xl text-mobile2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
-                            <h3 className="lg:text-xl text-mobilexl mb-[25px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
+                            <h3 className="lg:text-xl text-mobilexl mb-[15px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
                             <span className="lg:text-lg text-mobilebase font-kl block font-[500] leading-[20px]">
                             As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create, and collaborate. The commitment to people will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
                             </span>
@@ -154,7 +154,7 @@ export default function Learn(){
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
                         <div>
-                            <h2 className="lg:text-2xl text-mobile2xl mb-[25px] font-kl uppercase">We serve the people who like to think of new ideas and make them real.</h2>
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">We serve the people who like to think of new ideas and make them real.</h2>
                             {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
                             <span className="lg:text-lg text-mobilebase font-kl block font-[500] leading-[20px]">
                             They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. they are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. we help them with the support they need so they can keep creating amazing things. 

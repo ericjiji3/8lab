@@ -99,7 +99,7 @@ export default function Home(){
                         <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
                     </Parallax>
                     :
-                    <Parallax className='fixed top-0' translateY={['0px', `-${(bottom / 2) - 7.5}px`]} scale={[1, 0.25]} startScroll={0} endScroll={bottom}>
+                    <Parallax className='sticky top-0' translateY={['0px', `-${(bottom / 2) - 38}px`]} scale={[1, 0.25]} startScroll={0} endScroll={bottom}>
                         <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
                     </Parallax>
                 }
