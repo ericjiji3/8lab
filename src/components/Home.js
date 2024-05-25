@@ -12,7 +12,7 @@ export default function Home(){
         let rect = e.currentTarget.getBoundingClientRect();
         let x = e.clientX - rect.left;
         let y = e.clientY - rect.top;
-        let middleX = (rect.right - rect.left) / 2;
+        let middleX = (rect.left - rect.right) / 2;
         let middleY = (rect.bottom - rect.top) / 2;
 
         let offsetX = (e.clientX - middleX) / middleX;
