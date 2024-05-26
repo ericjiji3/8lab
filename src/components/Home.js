@@ -5,6 +5,7 @@ import React from 'react';
 import Image from "next/image";
 import Logo from '../../public/images/8lab.png';
 import Tilt from 'react-parallax-tilt';
+import Card from '../../public/images/card.png';
 import { Parallax } from "react-scroll-parallax";
 import { Link, Element} from 'react-scroll';
 
@@ -66,7 +67,7 @@ export default function Home(){
         <div className="px-[45px] relative bg-black">
  
             <div>
-            <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[575px] bg-blue fixed lg:top-[15%] top-[10%] lg:left-[35%] left-[7.5%] translate-x-[-7.7%] rounded-lg z-[1] animate-fadeIn opacity-0">
+            <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[575px] fixed lg:top-[15%] top-[20%] lg:left-[38%] left-[7.5%] translate-x-[-7.7%] z-[1] animate-fadeIn opacity-0">
             <div 
                     // style={{
                     
@@ -76,7 +77,9 @@ export default function Home(){
                     // onMouseMove={tiltRectange}
                     // className="w-[30%] h-[75%] bg-blue fixed top-[15%] left-[50%] translate-x-[-50%] rounded-lg z-[1]"
                     >
+                        
                 </div>
+                <Image className="w-full lg:w-[80%] rounded-lg" src={Card} width={400} alt="oops"/>
             </Tilt>
             </div>
 
