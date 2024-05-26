@@ -58,7 +58,7 @@ export default function Home(){
         let offsetY = (middleY - e.clientY) / middleY;
         console.log("offset X: ", offsetX, "ofset Y: ", offsetY);
         setXDeg(offsetX);
-        setYDeg(offsetY);
+        // setYDeg(offsetY);
 
     }
 
@@ -68,7 +68,11 @@ export default function Home(){
  
             <div>
             <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[575px] fixed lg:top-[15%] top-[15%] lg:left-[38%] left-[7.5%] translate-x-[-7.7%] z-[1] animate-fadeIn opacity-0">
-            <div 
+                <div>
+                <Parallax rotateY={[0, -180]} startScroll={0} endScroll={bottom}
+                    style ={{
+                        transformOrigin: '40% 0'
+                    }}
                     // style={{
                     
                     //         transform: `perspective(1000px) rotateY(${yDeg * 10}deg) rotateX(${xDeg * 10}deg) scale3d(1,1,1) translateX(-50%)`
@@ -78,8 +82,12 @@ export default function Home(){
                     // className="w-[30%] h-[75%] bg-blue fixed top-[15%] left-[50%] translate-x-[-50%] rounded-lg z-[1]"
                     >
                         
+                
+                
+                <Image style={{transform: `rotateY(-180deg)`}} className="absolute top-0 z-[1] w-full lg:w-[80%] rounded-lg" src={Card} width={400} alt="oops"/>
+                <Image className="absolute top-0 z-[1] w-full lg:w-[80%] rounded-lg" src={Card} width={400} alt="oops"/>
+                </Parallax>
                 </div>
-                <Image className="w-full lg:w-[80%] rounded-lg" src={Card} width={400} alt="oops"/>
             </Tilt>
             </div>
 

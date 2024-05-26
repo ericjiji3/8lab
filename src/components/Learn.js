@@ -34,7 +34,7 @@ export default function Learn(){
 
         const scroll = (event) => {
          const { pageYOffset, scrollY } = window;
-         console.log('yOffset', pageYOffset, 'scrollY', scrollY);
+        //  console.log('yOffset', pageYOffset, 'scrollY', scrollY);
          if(elRef.current){
             let elDimensions = elRef.current.getBoundingClientRect();
             let elHeight = elDimensions.bottom - elDimensions.top;
