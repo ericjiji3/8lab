@@ -22,7 +22,7 @@ export default function About(){
                     Ideas evolve and become clearer as you work through them.
 So, if you aren't just about dreaming, but about making things happen;
 If you are curious to know how to merge your creativity with tech and find easier and better ways to bring your imagination to life;
-If you want to see real-time examples and stories, so you don’t have to start from scratch;
+If you want to see real-time examples and stories, so you don&apos;t have to start from scratch;
 If you are looking for a pathway that will help you to make more informed decisions;
 If you want to get started;
 If your goal is to grow and level up;
