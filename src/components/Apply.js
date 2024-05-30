@@ -12,7 +12,7 @@ export default function Apply(){
         <Element name="apply">
             
             <div className="relative z-[3] bg-black w-full h-full lg:h-dvh overflow-x-hidden">
-                <CRTEffect></CRTEffect>
+                {/* <CRTEffect></CRTEffect> */}
                 <div className="absolute z-[100] top-[45%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                     <a href="mailto:nana@8lab.ai" className="block rounded-[100%] text-2xl relative hover:cursor-pointer">
                         <Image className="lg:w-[300px] lg:h-[300px] w-[200px] h-[200px]" src={Earth} width={300} height={300} alt="oops"/>

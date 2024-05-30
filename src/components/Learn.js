@@ -102,7 +102,7 @@ export default function Learn(){
             
         
         <div className="relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
-        <CRTEffect></CRTEffect>
+        {/* <CRTEffect></CRTEffect> */}
             {width >= 1024 ?
                 <div 
                     className="sticky z-[1] top-0 pt-[100px] w-full px-[45px] h-dvh"
