@@ -20,7 +20,7 @@ export default function About(){
                     </h2>
                     <span className="block lg:text-lg text-mobilebase mb-[10px]">
                     Ideas evolve and become clearer as you work through them.
-So, if you aren't just about dreaming, but about making things happen;
+So, if you aren&apos;t just about dreaming, but about making things happen;
 If you are curious to know how to merge your creativity with tech and find easier and better ways to bring your imagination to life;
 If you want to see real-time examples and stories, so you don&apos;t have to start from scratch;
 If you are looking for a pathway that will help you to make more informed decisions;
