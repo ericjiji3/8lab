@@ -6,6 +6,7 @@ import Image from "next/image";
 import Logo from '../../public/images/8lab.png';
 import Tilt from 'react-parallax-tilt';
 import Card from '../../public/images/card.png';
+import CardBack from '../../public/images/cardBack.png';
 import { Parallax } from "react-scroll-parallax";
 import { Link, Element} from 'react-scroll';
 
@@ -63,16 +64,18 @@ export default function Home(){
     }
 
     return(
-        <Element name="home">
+        
+        <Element name="home">   
         <div className="px-[45px] relative bg-black">
- 
+            
             <div>
             <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[575px] fixed lg:top-[15%] top-[15%] lg:left-[38%] left-[7.5%] translate-x-[-7.7%] z-[1] animate-fadeIn opacity-0">
                 <div>
                 <Parallax rotateY={[0, -180]} startScroll={0} endScroll={bottom} className={width >= 1024 ? `origin-[40%_0]` : "origin-[50%_0]"}
-                    // style ={{
-                    //     transformOrigin: '40% 0'
-                    // }}
+                    style ={{
+                        transform: `perspective(1000px)`,
+                        transformStyle: 'preserve-3d'
+                    }}
                     // style={{
                     
                     //         transform: `perspective(1000px) rotateY(${yDeg * 10}deg) rotateX(${xDeg * 10}deg) scale3d(1,1,1) translateX(-50%)`
@@ -84,8 +87,8 @@ export default function Home(){
                         
                 
                 
-                <Image style={{transform: `rotateY(-180deg)`}} className="absolute top-0 z-[1] w-full lg:w-[80%] rounded-lg" src={Card} width={400} alt="oops"/>
-                <Image className="absolute top-0 z-[1] w-full lg:w-[80%] rounded-lg" src={Card} width={400} alt="oops"/>
+                <Image style={{transform: `rotateY(-180deg)`, backfaceVisibility: 'hidden'}} className="absolute top-0 z-[1] w-full lg:w-[80%] rounded-lg" src={Card} width={400} alt="oops"/>
+                <Image style={{backfaceVisibility: 'hidden'}} className="absolute top-0 z-[1] w-full lg:w-[80%] rounded-lg" src={CardBack} width={400} alt="oops"/>
                 </Parallax>
                 </div>
             </Tilt>
@@ -104,7 +107,7 @@ export default function Home(){
                     </Parallax>
                     
                 </div>
-                <div className="fixed w-full h-fit lg:w-auto lg:h-auto top-[50%] left-[51%] lg:left-[50%] translate-x-[-50%] translate-y-[-50%] z-[250]">
+                <div className="fixed w-full h-fit lg:w-auto lg:h-auto top-[50%] left-[51%] lg:left-[50%] translate-x-[-50%] translate-y-[-50%] z-[100]">
                 {width >= 1024 ?
                     <Parallax translateY={['0px', `-${(bottom / 2) - 37.5}px`]} scale={[1, 0.2]} startScroll={0} endScroll={bottom}>
                         <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
@@ -126,7 +129,8 @@ export default function Home(){
                 </Parallax>
                 <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom} endScroll={bottom * 2}>
                     <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
-                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB IS A members-only network for people who want to grow and scale their creative ideas.</h2>
+                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB is a members-only network for creatives to grow, connect and find ways to 
+get paid.</h2>
                     </div>
                 </Parallax>
             </Element>
@@ -135,5 +139,6 @@ export default function Home(){
 
         </div>
         </Element>
+       
     )
 }

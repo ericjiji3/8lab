@@ -8,6 +8,7 @@ import { Parallax } from "react-scroll-parallax";
 import useDetectScroll from '@smakss/react-scroll-direction';
 import Tilt from 'react-parallax-tilt';
 import About from "./About";
+import CRTEffect from "./Overlay";
 
 export default function Learn(){
     const { scrollDir, scrollPosition } = useDetectScroll();
@@ -98,14 +99,18 @@ export default function Learn(){
     }
 
     return(
-        <div className="relative lg:z-[4] z-[2] bg-black w-full h-[200dvh]" ref={elRef} onScroll={handleScroll}>
+            
+        
+        <div className="relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
+        <CRTEffect></CRTEffect>
             {width >= 1024 ?
                 <div 
                     className="sticky z-[1] top-0 pt-[100px] w-full px-[45px] h-dvh"
                     >
+                    
                     <Tilt className="w-[30%] h-[75%] bg-blue sticky left-[100%] rounded-lg z-[1]">
                         <div>
-
+                        
                         </div>
                     </Tilt>
                     {/* <div 
@@ -119,10 +124,12 @@ export default function Learn(){
                     </div> */}
                     <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={top} endScroll={top + 400}>
                         <Image src={Human} width={220} alt="oops"/>
+                        
                     </Parallax>
                     <Parallax className="absolute top-[30%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={top + 400} endScroll={top + 700}>
                         <Image src={Brain} width={364} alt="oops"/>
                     </Parallax>
+                    
                 </div>
                 :
                 <div className="relative w-full h-full">
@@ -143,10 +150,9 @@ export default function Learn(){
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
-                            <h2 className="lg:text-2xl text-mobile2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
-                            <h3 className="lg:text-xl text-mobilexl mb-[15px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
-                            <span className="lg:text-lg text-mobilebase font-kl block font-[500] leading-[20px]">
-                            As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create, and collaborate. The commitment to people will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">What do we care about?</h2>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px]">
+                            At 8lab, we care a lot about people. Even though we use a lot of ai lol. We know how tough this journey can be. As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create and collab. The commitment to People will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
                             </span>
                         </div>
                     </Parallax>
@@ -154,10 +160,10 @@ export default function Learn(){
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
                         <div>
-                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">We serve the people who like to think of new ideas and make them real.</h2>
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">Who do we serve?</h2>
                             {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
-                            <span className="lg:text-lg text-mobilebase font-kl block font-[500] leading-[20px]">
-                            They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. they are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. we help them with the support they need so they can keep creating amazing things. 
+                            <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px]">
+                            We serve the people who like to think of new ideas and make them real. They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. They are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. We help them with the support they need so they can keep creating amazing things. 
 
                             </span>
                         </div>
@@ -174,10 +180,9 @@ export default function Learn(){
                     <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
                         <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                             <div>
-                                <h2 className="text-2xl mb-[5px] font-kl uppercase">At 8lab, we care a lot about people.</h2>
-                                <h3 className="text-xl mb-[25px] font-kl font-[500]">Even though we use a lot of AI lol.</h3>
-                                <span className="text-lg font-kl font-[500]">
-                                As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create, and collaborate. The commitment to people will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
+                                <h2 className="text-2xl mb-[25px] font-kl uppercase">What do we care about?</h2>
+                                <span className="text-lg font-andalemo font-[500]">
+                                At 8lab, we care a lot about people. Even though we use a lot of ai lol. We know how tough this journey can be. As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create and collab. The commitment to People will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
                                 </span>
                             </div>
                         </Parallax>
@@ -187,10 +192,10 @@ export default function Learn(){
                     <div className="absolute z-[0] w-full h-[100dvh] top-[100dvh]">
                         <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[0,1]} startScroll={top + 350} endScroll={top + 700}>
                             <div>
-                                <h2 className="text-2xl mb-[25px] font-kl">We serve the people who like to think of new ideas and make them real.</h2>
+                                <h2 className="text-2xl mb-[25px] font-kl">Who do we serve?</h2>
                                 {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
-                                <span className="text-lg font-kl font-[500]">
-                                They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. they are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. we help them with the support they need so they can keep creating amazing things. 
+                                <span className="text-lg font-andalemo font-[500]">
+                                We serve the people who like to think of new ideas and make them real. They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. They are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. We help them with the support they need so they can keep creating amazing things. 
 
                                 </span>
                             </div>
@@ -202,7 +207,6 @@ export default function Learn(){
                 <></>
             }
             
-            
-        </div>
+            </div>
     )
 }
