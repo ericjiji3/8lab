@@ -101,8 +101,8 @@ export default function Learn(){
     return(
             
         
-        <div className="relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
-        {/* <CRTEffect></CRTEffect> */}
+        <div className="[text-shadow:_1px_1px_0_#00fe25] relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
+        <CRTEffect></CRTEffect>
             {width >= 1024 ?
                 <div 
                     className="sticky z-[1] top-0 pt-[100px] w-full px-[45px] h-dvh"
@@ -132,8 +132,8 @@ export default function Learn(){
                     
                 </div>
                 :
-                <div className="relative w-full h-full">
-                <div className="sticky z-[1] top-0 pt-[100px] w-full px-[45px] h-dvh">
+                <div className="relative z-[2] w-full h-full">
+                <div className="sticky z-[2] top-0 pt-[100px] w-full px-[45px] h-dvh">
                     <Parallax  className="absolute top-[45%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[1,0]} startScroll={top+100} endScroll={top + 350}>
                         <Parallax opacity={[0,1]} startScroll={top-300} endScroll={top + 100}>
                             <Image className="absolute left-[10%] top-[17%]" src={Human} width={250} alt="oops"/>
@@ -147,7 +147,7 @@ export default function Learn(){
                     </Parallax>
                     <div className="absolute w-[75%] md:h-[50%] h-[450px] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">
                     
-                    <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
+                    <div className="absolute z-[1] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
                             <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">What do we care about?</h2>
@@ -157,7 +157,7 @@ export default function Learn(){
                         </div>
                     </Parallax>
                     </div>
-                    <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
+                    <div className="absolute z-[1] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
                         <div>
                             <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">Who do we serve?</h2>
@@ -177,7 +177,7 @@ export default function Learn(){
             
             {width >= 1024 ?
                 <div>
-                    <div className="absolute z-[0] w-full h-[100dvh] top-[0px]">
+                    <div className="absolute z-[3] w-full h-[100dvh] top-[0px]">
                         <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                             <div>
                                 <h2 className="text-2xl mb-[25px] font-kl uppercase">What do we care about?</h2>
@@ -189,7 +189,7 @@ export default function Learn(){
                         
                     </div>
 
-                    <div className="absolute z-[0] w-full h-[100dvh] top-[100dvh]">
+                    <div className="absolute z-[3] w-full h-[100dvh] top-[100dvh]">
                         <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[0,1]} startScroll={top + 350} endScroll={top + 700}>
                             <div>
                                 <h2 className="text-2xl mb-[25px] font-kl">Who do we serve?</h2>

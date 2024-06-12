@@ -1,6 +1,6 @@
 const CRTEffect = ({ children }) => {
     return (
-      <div className="container">
+      <div className="containerOverlay">
         <div className="overlay">
           {children}
         </div>

@@ -13,7 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        'blue': '#6398CE',
+        'blue': '#00fe25',
         'black': '#121212',
         'white': '#E4E4E4',
       },
@@ -26,41 +26,49 @@ module.exports = {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '500',
+          textShadow: '2px 2px #000000'
         }],
         'mobilebase': ['14px', {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '500',
+          textShadow: '2px 2px #000000'
         }],
         'mobilelg': ['16px', {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '500',
+          textShadow: '2px 2px #000000'
         }],
         'lg': ['20px', {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '500',
+          textShadow: '2px 2px #000000'
         }],
         'button': ['13px', {
 
           letterSpacing: '0',
           fontWeight: '500',
+          textShadow: '2px 2px #000000'
         }],
         'xl': ['24px', {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '600',
+          textShadow: '2px 2px #000000'
         }],
         '2xl': ['50px', {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '700',
+          textShadow: '2px 2px #000000'
         }],
         'mobile2xl': ['30px', {
           lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '700',
+          textShadow: '2px 2px #000000'
         }]
       },
       borderRadius: {

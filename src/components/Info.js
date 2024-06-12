@@ -24,9 +24,9 @@ export default function Info(){
     }, [width])
 
     return(
-        <Parallax className="lg:h-lvh h-full bg-blue relative z-[3]">
+        <Parallax className="lg:h-full h-full bg-blue relative z-[3]">
             <CRTEffect></CRTEffect>
-            <div className="relative z-[3] pt-[100px] px-[45px]">
+            <div className="relative z-[3] pt-[100px] pb-[50px] px-[45px]">
                 {width >= 1024 ?
                     <div>
                         <h2 className="text-2xl font-kl uppercase mb-[15px]">Ideas evolve and become clear as you work on them.</h2>
@@ -36,7 +36,7 @@ export default function Info(){
                     <></>
                 }
                 
-                <div className="flex flex-col lg:flex-row lg:gap-[100px] mt-[75px]">
+                <div className="flex flex-col lg:flex-row lg:gap-[25px] mt-[50px]">
                     <div className="flex-1 mb-[100px] lg:mb-0">
                         <Image className="lg:mb-[20px] mb-[10px] h-[50px] lg:h-auto w-auto" src={Achieve} height={40} alt="oops"/>
                         <h3 className="text-xl mb-[20px] font-kl uppercase">Innovate</h3>

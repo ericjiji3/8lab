@@ -9,6 +9,7 @@ import Card from '../../public/images/card.png';
 import CardBack from '../../public/images/cardBack.png';
 import { Parallax } from "react-scroll-parallax";
 import { Link, Element} from 'react-scroll';
+import CRTEffect from "@/components/Overlay";
 
 export default function Home(){
     const [xDeg,setXDeg] = useState(0);
@@ -66,7 +67,8 @@ export default function Home(){
     return(
         
         <Element name="home">   
-        <div className="px-[45px] relative bg-black">
+        <CRTEffect></CRTEffect>
+        <div className="[text-shadow:_3px_3px_0_#000000] px-[45px] relative bg-black">
             
             <div>
             <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[575px] fixed lg:top-[15%] top-[15%] lg:left-[38%] left-[7.5%] translate-x-[-7.7%] z-[1] animate-fadeIn opacity-0">
@@ -129,8 +131,7 @@ export default function Home(){
                 </Parallax>
                 <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom} endScroll={bottom * 2}>
                     <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
-                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB is a members-only network for creatives to grow, connect and find ways to 
-get paid.</h2>
+                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB is the members-only space for creatives to work on any idea, get feedback, connect, and find growth opportunities.</h2>
                     </div>
                 </Parallax>
             </Element>
