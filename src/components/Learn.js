@@ -101,7 +101,7 @@ export default function Learn(){
     return(
             
         
-        <div className="[text-shadow:_1px_1px_0_#00fe25] relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
+        <div className="[text-shadow:_0.5px_0.5px_0_#00fe25] relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
         <CRTEffect></CRTEffect>
             {width >= 1024 ?
                 <div 
@@ -134,7 +134,7 @@ export default function Learn(){
                 :
                 <div className="relative z-[2] w-full h-full">
                 <div className="sticky z-[2] top-0 pt-[100px] w-full px-[45px] h-dvh">
-                    <Parallax  className="absolute top-[45%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[1,0]} startScroll={top+100} endScroll={top + 350}>
+                    <Parallax  className="absolute top-[50%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[1,0]} startScroll={top+100} endScroll={top + 350}>
                         <Parallax opacity={[0,1]} startScroll={top-300} endScroll={top + 100}>
                             <Image className="absolute left-[10%] top-[17%]" src={Human} width={250} alt="oops"/>
                         </Parallax>
