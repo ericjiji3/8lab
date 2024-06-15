@@ -39,28 +39,23 @@ export default function Info(){
                 <div className="flex flex-col lg:flex-row lg:gap-[25px] mt-[50px]">
                     <div className="flex-1 mb-[100px] lg:mb-0">
                         <Image className="lg:mb-[20px] mb-[10px] h-[50px] lg:h-auto w-auto" src={Achieve} height={40} alt="oops"/>
-                        <h3 className="text-xl mb-[20px] font-kl uppercase">Innovate</h3>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Early Access to New Tech: Join fun challenges where you can test the latest tools,  make extra $, share your thoughts, and stay ahead of the game.</span>
+                        <h3 className="text-xl mb-[20px] font-kl uppercase">Step 1: Brainstorm</h3>
+                        <span className="lg:text-lg text-mobilelg block mb-[15px]">IDEAS WANTED—Whether it’s big dreams or early drafts, we want to hear it all! Engage in conversations with experts, other members, and our AI creative partner. Share your thoughts and needs, and get feedback to elevate your idea.</span>
                     </div>
                     <div className="flex-1 mb-[100px] lg:mb-0">
                         <Image className="lg:mb-[20px] mb-[10px] h-[50px] lg:h-auto w-auto" src={Innovate} height={40} alt="oops"/>
-                        <h3 className="text-xl mb-[20px] font-kl uppercase">Grow</h3>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Surround yourself with others who are where you want to be and Learn new ways of thinking.</span>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Get to work on your idea by joining  our  monthly  programs where you get expert advice and feedback to get better and keep going.</span>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Unlock cool tools, work on your ideas, and get practical guidance to bring them to life. </span>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Get exclusive insights, case studies, reports, and special sessions with top industry leaders.</span>
+                        <h3 className="text-xl mb-[20px] font-kl uppercase">Step 2: Map it Out</h3>
+                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Stay on track with our monthly core groups. Set goals, create roadmaps, focus on key tasks, and hold each other accountable.</span>
                     </div>
                     <div className="flex-1 mb-[100px] lg:mb-0">
                         <Image className="lg:mb-[20px] mb-[10px] h-[50px] lg:h-auto w-auto" src={Impact} height={40} alt="oops"/>
-                        <h3 className="text-xl mb-[20px] font-kl uppercase">Connect</h3>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">AI-Powered Networking: connect with the right people, ensuring meaningful interactions and collaborations.</span>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Be part of a special community of top creatives where you can showcase your work, collaborate, and get inspired.</span>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Gain insider access to events and key decision-makers at brands from all over the world.</span>
+                        <h3 className="text-xl mb-[20px] font-kl uppercase">Step 3: Put in Work</h3>
+                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Access new tools, join cohorts, unlock resources, and get the actionable guidance you need to get sh*t done and reach your goals.</span>
                     </div>
                     <div className="flex-1 mb-[100px] lg:mb-0">
                         <Image className="lg:mb-[20px] mb-[10px] h-[50px] lg:h-auto w-auto" src={Money} height={40} alt="oops"/>
-                        <h3 className="text-xl mb-[20px] font-kl uppercase">Save Money</h3>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Get special discounts on popular apps, creative spaces, experiences, restaurants, brands and many more from our exclusive vendor database.</span>
+                        <h3 className="text-xl mb-[20px] font-kl uppercase">Step 4: Activate the 8PASS</h3>
+                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Discover a new experience with the 8PASS. Gain early access to gifts, products, apps, special deals, events, and other 8LAB benefits. Expand your network, find new ways to make money, and unlock infinite possibilities for personal and professional growth.</span>
                     </div>
                 </div>
             </div>

@@ -68,7 +68,7 @@ export default function Home(){
         
         <Element name="home">   
         <CRTEffect></CRTEffect>
-        <div className="[text-shadow:_3px_3px_0_#000000] px-[45px] relative bg-black">
+        <div className="[text-shadow:_2px_2px_0_#000000] px-[45px] relative bg-black">
             
             <div>
             <Tilt className="lg:w-[30%] w-[85%] lg:h-[75%] md:h-[85%] h-[575px] fixed lg:top-[15%] top-[15%] lg:left-[38%] left-[7.5%] translate-x-[-7.7%] z-[1] animate-fadeIn opacity-0">
@@ -100,16 +100,18 @@ export default function Home(){
             
             
             <div className="h-lvh relative" ref={elRef}>
-                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[1]">
+                <div className="absolute w-full lg:w-auto top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[3]">
                     
-                    <Parallax className="relative left-[50%] translate-x-[-50%] bg-black inline-block px-[25px] py-[10px] mt-[225px] rounded-lg" opacity={[1,0]} startScroll={0} endScroll={bottom/2}>
-                    <div className="font-kl text-button">
+                    <Parallax className="relative left-[50%] translate-x-[-50%] mt-[250px] lg:mt-[325px] lg:w-auto w-full" opacity={[1,0]} startScroll={0} endScroll={bottom/2}>
+                    <h2 className="relative block text-mobilexl lg:text-xl text-center font-kl uppercase pointer-events-none mb-[15px]">Join the members-only space to take your ideas to the next level. Collab with experts, find growth opportunities and get support from our Ai creative partner. 
+                    </h2>
+                    <div className="font-kl bg-black flex w-fit mx-auto mt-[20px] px-[25px] py-[10px] text-button rounded-lg">
                         APPLY NOW
                     </div>
                     </Parallax>
                     
                 </div>
-                <div className="fixed w-full h-fit lg:w-auto lg:h-auto top-[50%] left-[51%] lg:left-[50%] translate-x-[-50%] translate-y-[-50%] z-[100]">
+                <div className="fixed w-full h-fit lg:w-auto lg:h-auto top-[45%] lg:top-[50%] left-[51%] lg:left-[50%] translate-x-[-50%] translate-y-[-50%] z-[100]">
                 {width >= 1024 ?
                     <Parallax translateY={['0px', `-${(bottom / 2) - 37.5}px`]} scale={[1, 0.2]} startScroll={0} endScroll={bottom}>
                         <Link className="hover:cursor-pointer w-full" to="home" smooth="easeIn" delay={150} duration={2500}><Image className="mx-auto" src={Logo} height={65} alt="logo"/></Link>
@@ -124,14 +126,18 @@ export default function Home(){
 
             </div>
             <Element name="learn">
-                <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom/1.5} endScroll={bottom}>
+                <div className="h-lvh relative z-[3] pointer-events-none">
+                    <h2 className="text-2xl text-center font-kl uppercase pointer-events-none"></h2>
+                </div>
+                <Parallax className="h-[50lvh] relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom} endScroll={bottom * 1.75}>
                     <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
-                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">In the era of ai, we are still about the people.</h2>
+                        <h2 className="text-mobile2xl lg:text-2xl text-center font-kl uppercase pointer-events-none mb-[25px]">At 8LAB, your ideas don’t just come to life; they grow, connect, and earn.</h2>
+                        <h2 className="relative block text-mobilexl lg:text-xl text-center font-kl uppercase pointer-events-none mb-[15px]">Think of us as your testing ground for new businesses, side hustles, finding new clients, or that dream job. Pretty much anything you want to explore creatively.</h2>
                     </div>
                 </Parallax>
-                <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom} endScroll={bottom * 2}>
+                <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom * 1.75} endScroll={bottom * 2.5}>
                     <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
-                        <h2 className="text-2xl text-center font-kl uppercase pointer-events-none">8LAB is the members-only space for creatives to work on any idea, get feedback, connect, and find growth opportunities.</h2>
+                        <h2 className="text-mobile2xl lg:text-2xl text-center font-kl uppercase pointer-events-none">The 8LAB BR8KDOWN</h2>
                     </div>
                 </Parallax>
             </Element>

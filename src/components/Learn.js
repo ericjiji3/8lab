@@ -101,7 +101,7 @@ export default function Learn(){
     return(
             
         
-        <div className="[text-shadow:_0.5px_0.5px_0_#00fe25] relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
+        <div className="[text-shadow:_0.5px_0.5px_0_#00c01d] relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
         <CRTEffect></CRTEffect>
             {width >= 1024 ?
                 <div 
@@ -122,13 +122,13 @@ export default function Learn(){
                         
                     >
                     </div> */}
-                    <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={top} endScroll={top + 400}>
+                    {/* <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={top} endScroll={top + 400}>
                         <Image src={Human} width={220} alt="oops"/>
                         
                     </Parallax>
                     <Parallax className="absolute top-[30%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={top + 400} endScroll={top + 700}>
                         <Image src={Brain} width={364} alt="oops"/>
-                    </Parallax>
+                    </Parallax> */}
                     
                 </div>
                 :
@@ -136,13 +136,13 @@ export default function Learn(){
                 <div className="sticky z-[2] top-0 pt-[100px] w-full px-[45px] h-dvh">
                     <Parallax  className="absolute top-[50%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[1,0]} startScroll={top+100} endScroll={top + 350}>
                         <Parallax opacity={[0,1]} startScroll={top-300} endScroll={top + 100}>
-                            <Image className="absolute left-[10%] top-[17%]" src={Human} width={250} alt="oops"/>
+                            {/* <Image className="absolute left-[10%] top-[17%]" src={Human} width={250} alt="oops"/> */}
                         </Parallax>
                     </Parallax>
                     <Parallax  className="absolute left-[50%] translate-x-[-50%] top-[48%] translate-y-[-50%] left-0 pt-[175px] w-full px-[45px] h-dvh z-[-3] pointer-events-none" opacity={[0,1]} startScroll={top+350} endScroll={top + 600}>
                         <Parallax opacity={[0,1]} startScroll={top + 100} endScroll={top + 300}>
-                            <Image src={Brain} width={400} alt="oops"/>
-                            <Image className="rotate-[180deg]" src={Brain} width={400} alt="oops"/>
+                            {/* <Image src={Brain} width={400} alt="oops"/> */}
+                            {/* <Image className="rotate-[180deg]" src={Brain} width={400} alt="oops"/> */}
                         </Parallax>
                     </Parallax>
                     <div className="absolute w-[75%] md:h-[50%] h-[450px] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">

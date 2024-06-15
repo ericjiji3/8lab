@@ -97,7 +97,7 @@ body {
   }
 }
 .containerBlue {
-  background: #00fe25;
+  background: #00c01d;
   width: 100dvw;
   height: 100%;
   
@@ -134,7 +134,7 @@ body {
 }
 
 .containerBlue::after {
-  animation: flicker 0.15s infinite;
+  animation: flicker 0.3s infinite;
 }
 .containerOverlay {
   background: #121010;
@@ -174,7 +174,7 @@ body {
 }
 
 .containerOverlay::after {
-  animation: flicker 0.15s infinite;
+  animation: flicker 0.3s infinite;
 }
 
 @keyframes turn-on {
