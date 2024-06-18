@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
-import Innovate from '../../public/images/innovate.png';
-import Achieve from '../../public/images/trophy.png';
-import Impact from '../../public/images/world-solid.png';
+import Innovate from '../../public/images/global-network.png';
+import Achieve from '../../public/images/metaverse.png';
+import Impact from '../../public/images/plant.png';
 import Money from '../../public/images/money.png';
 import { Parallax } from "react-scroll-parallax";
 import CRTEffect from "./OverlayBlue";
@@ -24,7 +24,7 @@ export default function Info(){
     }, [width])
 
     return(
-        <Parallax className="lg:h-full h-full bg-blue relative z-[3]">
+        <Parallax className="lg:h-dvh h-full bg-blue relative z-[3]">
             <CRTEffect></CRTEffect>
             <div className="relative z-[3] pt-[100px] pb-[50px] px-[45px]">
                 {width >= 1024 ?

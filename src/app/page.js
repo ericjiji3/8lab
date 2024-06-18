@@ -20,8 +20,9 @@ export default function App() {
       {/* <Header/> */}
       <Home/>
       <Info/>
-      <Learn/>
       <About/>
+      <Learn/>
+      
       <Apply/>
 
     </main>

@@ -145,14 +145,35 @@ export default function Learn(){
                             {/* <Image className="rotate-[180deg]" src={Brain} width={400} alt="oops"/> */}
                         </Parallax>
                     </Parallax>
-                    <div className="absolute w-[75%] md:h-[50%] h-[450px] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">
+                    <div className="absolute w-[75%] md:h-[50%] h-[575px] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">
                     
                     <div className="absolute z-[1] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
-                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">What do we care about?</h2>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px]">
-                            At 8lab, we care a lot about people. Even though we use a lot of ai lol. We know how tough this journey can be. As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create and collab. The commitment to People will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">IN THE ERA OF AI, WE ARE STILL ABOUT THE PEOPLE.</h2>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                At 8lab, we care a lot about people. 
+                            </span>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                Even though we use a lot of AI. 
+                            </span>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                We’ve all heard the rumors already: “AI will take out jobs.” But instead of worrying about it replacing your job, we ask - why not make it work for you?
+                            </span>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                AI is here. But you have been here longer (No, but seriously, you are still THE human after all). 
+                            </span>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                You are the creative expert and you are the boss. 
+                            </span>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                You are the one in charge of giving AI its value. 
+                            </span>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                So what will you do with that? 
+                            </span>
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                                WE’RE HERE TO HELP YOU FIGURE IT OUT.
                             </span>
                         </div>
                     </Parallax>
@@ -160,12 +181,41 @@ export default function Learn(){
                     <div className="absolute z-[1] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
                         <div>
-                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">Who do we serve?</h2>
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">WHO DO WE SERVE?</h2>
                             {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
-                            <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px]">
-                            We serve the people who like to think of new ideas and make them real. They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. They are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. We help them with the support they need so they can keep creating amazing things. 
-
-                            </span>
+                            <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                We serve thought leaders who turn ideas into realities. 
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                They express their passions through art, fashion, tech, films, innovative businesses, and unique experiences. 
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                They are curious and they are always learning.
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                They thrive on collaborating. 
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                Their creativity is their greatest tool.
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                It solves problems. 
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                It shifts narratives.
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                It rights the wrongs.
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                It challenges the norms. 
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                It brings joy;
+                                </span>
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                and It just makes everything more interesting.
+                                </span>
                         </div>
                     </Parallax>
                     </div>
@@ -178,11 +228,32 @@ export default function Learn(){
             {width >= 1024 ?
                 <div>
                     <div className="absolute z-[3] w-full h-[100dvh] top-[0px]">
-                        <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
+                        <Parallax className="w-[50%] relative left-[45px] top-[45%] translate-y-[-50%]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                             <div>
-                                <h2 className="text-2xl mb-[25px] font-kl uppercase">What do we care about?</h2>
-                                <span className="text-lg font-andalemo font-[500]">
-                                At 8lab, we care a lot about people. Even though we use a lot of ai lol. We know how tough this journey can be. As creatives ourselves, we’ve been through it all. That’s why we’re building what we wish we had when we started. We want to help our community to grow, create and collab. The commitment to People will always be the heart of what we do. Because at the end of the day, we build tech to help us do better, not to take our place. 
+                                <h2 className="text-2xl mb-[25px] font-kl uppercase">IN THE ERA OF AI, WE ARE STILL ABOUT THE PEOPLE.</h2>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    At 8LAB, we care a lot about people. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    Even though we use a lot of AI. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    We’ve all heard the rumors already: “AI will take out jobs.” But instead of worrying about it replacing your job, we ask - why not make it work for you?
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    AI is here. But you have been here longer (No, but seriously, you are still THE human after all). 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    You are the creative expert and you are the boss. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    You are the one in charge of giving AI its value. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    So what will you do with that? 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                    WE’RE HERE TO HELP YOU FIGURE IT OUT.
                                 </span>
                             </div>
                         </Parallax>
@@ -190,13 +261,42 @@ export default function Learn(){
                     </div>
 
                     <div className="absolute z-[3] w-full h-[100dvh] top-[100dvh]">
-                        <Parallax className="w-[50%] relative left-[45px] top-[50%] translate-y-[-50%]" opacity={[0,1]} startScroll={top + 350} endScroll={top + 700}>
+                        <Parallax className="w-[50%] relative left-[45px] top-[45%] translate-y-[-50%]" opacity={[0,1]} startScroll={top + 350} endScroll={top + 700}>
                             <div>
-                                <h2 className="text-2xl mb-[25px] font-kl">Who do we serve?</h2>
+                                <h2 className="text-2xl mb-[25px] font-kl">WHO DO WE SERVE?</h2>
                                 {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
-                                <span className="text-lg font-andalemo font-[500]">
-                                We serve the people who like to think of new ideas and make them real. They love to create things like art, fashion, tech, films, and new kinds of cool businesses and experiences. They are curious, always learning, and they enjoy collaborating with others to make their ideas even better. They use their creativity to solve problems, bring joy, and make the world a more interesting place. We help them with the support they need so they can keep creating amazing things. 
-
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                We serve thought leaders who turn ideas into realities. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                They express their passions through art, fashion, tech, films, innovative businesses, and unique experiences. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                They are curious and they are always learning.
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                They thrive on collaborating. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                Their creativity is their greatest tool.
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                It solves problems. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                It shifts narratives.
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                It rights the wrongs.
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                It challenges the norms. 
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                It brings joy;
+                                </span>
+                                <span className="text-lg block font-andalemo font-[500] mb-[10px]">
+                                and It just makes everything more interesting.
                                 </span>
                             </div>
                         </Parallax>

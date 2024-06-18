@@ -53,7 +53,6 @@ module.exports = {
           textShadow: '2px 2px #000000'
         }],
         'xl': ['24px', {
-          lineHeight: 'normal',
           letterSpacing: '0',
           fontWeight: '600',
           textShadow: '2px 2px #000000'

@@ -132,12 +132,12 @@ export default function Home(){
                 <Parallax className="h-[50lvh] relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom} endScroll={bottom * 1.75}>
                     <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
                         <h2 className="text-mobile2xl lg:text-2xl text-center font-kl uppercase pointer-events-none mb-[25px]">At 8LAB, your ideas don’t just come to life; they grow, connect, and earn.</h2>
-                        <h2 className="relative block text-mobilexl lg:text-xl text-center font-kl uppercase pointer-events-none mb-[15px]">Think of us as your testing ground for new businesses, side hustles, finding new clients, or that dream job. Pretty much anything you want to explore creatively.</h2>
+                        <h2 className="relative block text-mobilexl lg:text-xl text-center font-kl bg-[#00c01d] pb-[10px] uppercase pointer-events-none mb-[15px]">Think of us as your testing ground for new businesses, side hustles, finding new clients, or that dream job. Pretty much anything you want to explore creatively.</h2>
                     </div>
                 </Parallax>
                 <Parallax className="h-lvh relative z-[3] pointer-events-none" opacity={[0,1,'easeIn']} startScroll={bottom * 1.75} endScroll={bottom * 2.5}>
                     <div className="absolute top-[50%] left-[50%] lg:w-auto w-[95vw] translate-x-[-50%] translate-y-[-50%] z-[1] pointer-events-none">
-                        <h2 className="text-mobile2xl lg:text-2xl text-center font-kl uppercase pointer-events-none">The 8LAB BR8KDOWN</h2>
+                        <h2 className="text-mobile2xl lg:text-2xl text-center font-kl bg-[#00c01d] pb-[10px] uppercase pointer-events-none">The 8LAB BR8KDOWN</h2>
                     </div>
                 </Parallax>
             </Element>
