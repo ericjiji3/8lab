@@ -16,7 +16,7 @@ export default function Apply(){
             <div className="[text-shadow:_0.5px_0.5px_0_#00c01d] relative z-[3] bg-black w-full h-dvh overflow-x-hidden" >
                 <CRTEffect></CRTEffect>
                 
-                <div className="absolute w-full top-[10%] lg:top-[0%] left-[50%] translate-x-[-50%] px-[45px] py-[100px] z-[3] lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase text-white text-center">
+                <div className="absolute w-full top-[5%] lg:top-[10%] lg:top-[0%] left-[50%] translate-x-[-50%] px-[45px] py-[100px] z-[3] lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase text-white text-center">
                     <h2 className="mb-[25px]">IF THIS SOUNDS LIKE YOU…</h2>
                     <h2>APPLY</h2>
                 </div>
@@ -32,7 +32,7 @@ export default function Apply(){
                 {/* <div className="absolute block w-max top-[50%] lg:top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                     <Image className="animate-reverseSpin lg:w-[275px] w-[200px]" src={Text} width={500} height={500} alt="oops"/>
                 </div> */}
-                <h2 className="block w-full absolute top-[55%] lg:top-[65%] left-[50%] translate-x-[-50%] lg:top-[70%] px-[45px] py-[100px] z-[3] lg:text-sm text-mobilesm mb-[15px] font-kl uppercase text-white text-center">Annual membership starts at $999. Learn more and apply now.</h2>
+                <h2 className="block w-full absolute top-[60%] lg:top-[65%] left-[50%] translate-x-[-50%] lg:top-[70%] px-[45px] py-[100px] z-[3] lg:text-sm text-mobilesm mb-[15px] font-kl uppercase text-white text-center">Annual membership starts at $999. Learn more and apply now.</h2>
             </div>
     
         </Element>

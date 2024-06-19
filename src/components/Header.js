@@ -8,6 +8,7 @@ import Twitter from '../../public/images/twitter-2.png';
 import { Link } from 'react-scroll';
 import Burger from '../../public/images/burger.png';
 import Logo from '../../public/images/8lab.png';
+import CRTEffect from "./OverlayBlue";
 
 export default function Header(){
     const [width, setWidth] = useState(0);
@@ -47,7 +48,8 @@ export default function Header(){
         <div className={open ? 'fixed z-[255] top-0 px-[45px] py-[30px] flex justify-between w-full text-white' : 'fixed z-[255] top-0 px-[45px] py-[30px] flex justify-between w-full text-white'}>
             <Image className="hover:cursor-pointer relative z-[300]" src={Burger} width={20} alt="oops" onClick={toggleMenu}/>
             <div className={open ? 'absolute top-0 left-0 bg-blue w-full h-dvh transition-[left] ease-in duration-[500ms]' : "absolute top-0 bg-blue w-full h-dvh left-[-100vw] transition-[left] ease-in duration-[500ms]"}>
-                <div className='absolute px-[45px] md:bottom-[30px] bottom-[40px] text-2xl text-white font-kl weight-[700] non-italic'>
+                <CRTEffect></CRTEffect>
+                <div className='absolute z-[5] px-[45px] md:bottom-[30px] bottom-[40px] text-2xl text-white font-kl weight-[700] non-italic'>
                     
                     <Link className="block hover:cursor-pointer mb-[20px]" to="home" smooth='easeIn' delay={150} duration={2500} onClick={toggleMenu}><Image src={Logo} height={40} alt="logo"/></Link>
                     <Link className="block hover:cursor-pointer mb-[10px]" to="about" smooth='easeIn' delay={150} duration={2500} onClick={toggleMenu}>ABOUT</Link>
