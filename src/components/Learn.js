@@ -145,7 +145,7 @@ export default function Learn(){
                             {/* <Image className="rotate-[180deg]" src={Brain} width={400} alt="oops"/> */}
                         </Parallax>
                     </Parallax>
-                    <div className="absolute w-[75%] md:h-[50%] h-[575px] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">
+                    <div className="absolute w-[75%] md:h-[50%] h-[590px] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] bg-[#00000080] backdrop-opacity-5 border border-1 border-blue rounded-lg z-[2]">
                     
                     <div className="absolute z-[1] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
