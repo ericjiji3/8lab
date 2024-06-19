@@ -7,6 +7,7 @@ import Earth from '../../public/images/Earth.gif';
 import { Element} from 'react-scroll';
 import CRTEffect from "./Overlay";
 import ApplyPerson from '../../public/images/apply.png';
+import Logo8 from '../../public/images/8lablogo.png';
 
 export default function Apply(){
     return(
@@ -19,18 +20,18 @@ export default function Apply(){
                     <h2 className="mb-[25px]">IF THIS SOUNDS LIKE YOU…</h2>
                     <h2>APPLY</h2>
                 </div>
-                <div className="absolute z-[100] top-[50%] lg:top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-                    <a href="mailto:nana@8lab.ai" className="block rounded-[100%] text-2xl relative hover:cursor-pointer">
-                        <Image className="lg:w-[300px] lg:h-[300px] w-[200px] h-[200px] brightness-75" src={Earth} width={300} height={300} alt="oops"/>
-                        <Image className="[text-shadow:_0.5px_0.5px_0_#000000] absolute flex align-middle self-center items-center justify-center font-kl font-bold top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] hover:cursor-pointer" src={ApplyPerson} width={64} height={64} alt="oops"/>
+                <div className="absolute z-[100] top-[50%] lg:top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
+                    <a href="mailto:hello@8lab.ai" className="block w-full h-full rounded-[100%] text-2xl relative hover:cursor-pointer">
+                        <Image className="animate-rotate relative lg:w-[250px] lg:h-[250px] w-[200px] h-[200px]" src={Logo8} width={250} height={250} alt="oops"/>
+                        {/* <Image className="absolute w-[60px] h-[60px] flex align-middle self-center items-center justify-center font-kl font-bold top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] hover:cursor-pointer" src={ApplyPerson} width={64} height={64} alt="oops"/> */}
                     </a>
                 </div>
                 {/* <div className="absolute block w-max top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                     <Image className="animate-spin lg:w-[450px] w-[300px]" src={Humans} width={450} height={450} alt="oops"/>
                 </div> */}
-                <div className="absolute block w-max top-[50%] lg:top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
+                {/* <div className="absolute block w-max top-[50%] lg:top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                     <Image className="animate-reverseSpin lg:w-[275px] w-[200px]" src={Text} width={500} height={500} alt="oops"/>
-                </div>
+                </div> */}
                 <h2 className="block w-full absolute top-[55%] lg:top-[65%] left-[50%] translate-x-[-50%] lg:top-[70%] px-[45px] py-[100px] z-[3] lg:text-sm text-mobilesm mb-[15px] font-kl uppercase text-white text-center">Annual membership starts at $999. Learn more and apply now.</h2>
             </div>
     

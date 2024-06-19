@@ -89,12 +89,17 @@ module.exports = {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        rotate: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(360deg)' },
         }
       },
       animation: {
         spin: 'spin 15s linear infinite',
         reverseSpin: 'reverseSpin 15s linear infinite',
-        fadeIn: 'fadeIn 0.15s ease-in 1.5s forwards'
+        fadeIn: 'fadeIn 0.15s ease-in 1.5s forwards',
+        rotate: 'rotate 5s linear infinite'
       }
     },
   },

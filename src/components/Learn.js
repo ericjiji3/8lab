@@ -101,7 +101,7 @@ export default function Learn(){
     return(
             
         
-        <div className="[text-shadow:_0.5px_0.5px_0_#00c01d] relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
+        <div className="[text-shadow:_1px_1px_0_#00c01d] relative lg:z-[4] z-[2] bg-black w-[100vw] h-[200dvh]" ref={elRef} onScroll={handleScroll}>
         <CRTEffect></CRTEffect>
             {width >= 1024 ?
                 <div 
@@ -172,9 +172,9 @@ export default function Learn(){
                             <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
                                 So what will you do with that? 
                             </span>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            {/* <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
                                 WE’RE HERE TO HELP YOU FIGURE IT OUT.
-                            </span>
+                            </span> */}
                         </div>
                     </Parallax>
                     </div>

@@ -33,7 +33,7 @@ export default function Header(){
         width >= 1024 ? 
         <div className='fixed z-[100] top-0 px-[45px] py-[30px] flex justify-between w-full'>
             <div className='flex self-center gap-[15px] drop-shadow-[1px_1px_0_#000000]'>
-                <a href="mailto:nana@8lab.ai"><Image src={Mail} height={15} alt="oops"/></a>
+                <a href="mailto:hello@8lab.ai"><Image src={Mail} height={15} alt="oops"/></a>
                 <a href="https://www.instagram.com/8lab.ai/"><Image src={Ig} height={15} alt="oops"/></a>
                 <a href="https://x.com/join8lab"><Image src={Twitter} height={15} alt="oops"/></a>
             </div>
@@ -54,7 +54,7 @@ export default function Header(){
                     <Link className="block hover:cursor-pointer mb-[10px]" to="apply" smooth='easeIn' delay={150} duration={2500} onClick={toggleMenu}>APPLY</Link>
                     <Link className="block hover:cursor-pointer mb-[25px]" to="learn" smooth='easeIn' delay={150} duration={2500} onClick={toggleMenu}>LEARN</Link>
                     <div className='flex self-center gap-[15px] ml-[5px]'>
-                        <a href="mailto:nana@8lab.ai"><Image src={Mail} height={20} alt="oops"/></a>
+                        <a href="mailto:hello@8lab.ai"><Image src={Mail} height={20} alt="oops"/></a>
                         <a href="https://www.instagram.com/8lab.ai/"><Image src={Ig} height={20} alt="oops"/></a>
                         <a href="https://x.com/join8lab"><Image src={Twitter} height={20} alt="oops"/></a>
                     </div>
