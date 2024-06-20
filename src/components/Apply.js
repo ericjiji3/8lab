@@ -18,7 +18,7 @@ export default function Apply(){
                 
                 <div className="absolute w-full top-[5%] lg:top-[10%] lg:top-[0%] left-[50%] translate-x-[-50%] px-[45px] py-[100px] z-[3] lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase text-white text-center">
                     <h2 className="mb-[25px]">IF THIS SOUNDS LIKE YOU…</h2>
-                    <h2>APPLY</h2>
+                    <a href="mailto:hello@8lab.ai"><h2>APPLY</h2></a>
                 </div>
                 <div className="absolute z-[100] top-[55%] lg:top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                     <a href="mailto:hello@8lab.ai" className="block w-full h-full rounded-[100%] text-2xl relative hover:cursor-pointer">

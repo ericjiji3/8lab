@@ -103,7 +103,7 @@ export default function Home(){
                 <div className="absolute w-full lg:w-auto top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[3]">
                     
                     <Parallax className="relative left-[50%] translate-x-[-50%] mt-[250px] lg:mt-[325px] lg:w-auto w-full" opacity={[1,0]} startScroll={0} endScroll={bottom/2}>
-                    <h2 className="relative block text-mobilexl lg:text-xl text-center font-kl uppercase pointer-events-none mb-[15px]">The members-only space to work on your ideas, showcase your projects, and connect with industry leaders and creatives worldwide, all guided by people + Ai Agent 8. </h2>
+                    <h2 className="relative block text-mobilexl lg:text-xl text-center font-kl uppercase pointer-events-none mb-[15px]">The members-only space to work on your ideas, share your projects, and connect with industry leaders + creatives worldwide, all guided by people and Ai Agent 8. </h2>
                     <div className="font-kl bg-black flex w-fit mx-auto mt-[20px] px-[25px] py-[10px] text-button rounded-lg">
                         APPLY NOW
                     </div>
