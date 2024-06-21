@@ -151,30 +151,30 @@ export default function Learn(){
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
                             <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">IN THE ERA OF AI, WE ARE STILL ABOUT THE PEOPLE.</h2>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 At 8lab, we care a lot about people. 
                             </span>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 Even though we use a lot of AI. 
                             </span>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 We’ve all heard the rumors already: “AI will take out jobs.” But instead of worrying about it replacing your job, we ask - why not make it work for you?
                             </span>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 AI is here. But you have been here longer (No, but seriously, you are still THE human after all). 
                             </span>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 You are the creative expert and you are the boss. 
                             </span>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 You are the one in charge of giving AI its value. 
                             </span>
-                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 So what will you do with that? 
                             </span>
-                            {/* <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 WE’RE HERE TO HELP YOU FIGURE IT OUT.
-                            </span> */}
+                            </span>
                         </div>
                     </Parallax>
                     </div>
@@ -183,37 +183,37 @@ export default function Learn(){
                         <div>
                             <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">WHO DO WE SERVE?</h2>
                             {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
-                            <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                            <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 We serve thought leaders who turn ideas into realities. 
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 They express their passions through art, fashion, tech, films, innovative businesses, and unique experiences. 
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 They are curious and they are always learning.
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 They thrive on collaborating. 
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 Their creativity is their greatest tool.
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 It solves problems. 
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 It shifts narratives.
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 It rights the wrongs.
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 It challenges the norms. 
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 It brings joy;
                                 </span>
-                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[10px]">
+                                <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 and It just makes everything more interesting.
                                 </span>
                         </div>
