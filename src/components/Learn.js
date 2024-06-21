@@ -150,7 +150,7 @@ export default function Learn(){
                     <div className="absolute z-[1] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[1,0]} startScroll={top} endScroll={top + 350}>
                         <div>
-                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">IN THE ERA OF AI, WE ARE STILL ABOUT THE PEOPLE.</h2>
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[7.5px] lg:mb-[15px] font-kl uppercase">IN THE ERA OF AI, WE ARE STILL ABOUT THE PEOPLE.</h2>
                             <span className="lg:text-lg text-mobilebase block font-andalemo font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 At 8lab, we care a lot about people. 
                             </span>
@@ -181,7 +181,7 @@ export default function Learn(){
                     <div className="absolute z-[1] w-full h-[100dvh] top-[0px]">
                     <Parallax className="w-[100%] relative px-[15px] py-[15px]" opacity={[0,1]} startScroll={top + 450} endScroll={top + 700}>
                         <div>
-                            <h2 className="lg:text-2xl text-mobile2xl mb-[15px] font-kl uppercase">WHO DO WE SERVE?</h2>
+                            <h2 className="lg:text-2xl text-mobile2xl mb-[7.5px] lg:mb-[15px] font-kl uppercase">WHO DO WE SERVE?</h2>
                             {/* <h3 className="text-xl mb-[25px]">Even though we use a lot of AI lol.</h3> */}
                             <span className="lg:text-lg text-mobilebase font-andalemo block font-[500] leading-[20px] mb-[5px] lg:mb-[10px]">
                                 We serve thought leaders who turn ideas into realities. 
