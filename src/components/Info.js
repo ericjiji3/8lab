@@ -26,7 +26,7 @@ export default function Info(){
     return(
         <Parallax className="h-full bg-blue relative z-[3]">
             <CRTEffect></CRTEffect>
-            <div className="relative z-[3] pt-[100px] pb-[50px] px-[45px]">
+            <div className="relative z-[3] pt-[100px] pb-[25px] lg:pb-[100px] px-[45px]">
             
                     <div>
                         <h2 className="text-mobile2xl text-white lg:text-2xl font-kl mb-[25px] uppercase pointer-events-none">The 8LAB BR8KDOWN</h2>

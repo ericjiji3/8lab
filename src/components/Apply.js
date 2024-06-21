@@ -17,7 +17,7 @@ export default function Apply(){
                 <CRTEffect></CRTEffect>
                 
                 <div className="relative w-full my-[100px] z-[3] lg:text-2xl text-mobile2xl font-kl uppercase text-white text-center">
-                    <h2 className="mb-[25px]">IF THIS SOUNDS LIKE YOU…</h2>
+                    <h2 className="mb-[25px] mx-[20px]">IF THIS SOUNDS LIKE YOU…</h2>
                     <a href="mailto:hello@8lab.ai"><h2>APPLY</h2></a>
                 </div>
                 <div className="relative z-[100]">
