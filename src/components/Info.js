@@ -24,18 +24,15 @@ export default function Info(){
     }, [width])
 
     return(
-        <Parallax className="lg:h-dvh h-full bg-blue relative z-[3]">
+        <Parallax className="h-full bg-blue relative z-[3]">
             <CRTEffect></CRTEffect>
             <div className="relative z-[3] pt-[100px] pb-[50px] px-[45px]">
-                {width >= 1024 ?
+            
                     <div>
                         <h2 className="text-mobile2xl text-white lg:text-2xl font-kl mb-[25px] uppercase pointer-events-none">The 8LAB BR8KDOWN</h2>
-                        <h2 className="text-xl font-kl uppercase">Ideas evolve and become clear as you work on them.</h2>
-                        <h3 className="text-xl font-kl uppercase">Whether it’s starting a business, launching a side hustle, or getting a promotion, 8LAB is where you experiment and figure things out.</h3>
+                        <h2 className="text-mobilexl lg:text-xl font-kl uppercase">Think of us as the testing ground for your ideas, side hustles, new experiences, and discovering what might be the next big thing at the intersection of creativity + tech.</h2>
                     </div>
-                    :
-                    <h2 className="text-mobile2xl text-white lg:text-2xl font-kl mb-[25px] uppercase pointer-events-none">The 8LAB BR8KDOWN</h2>
-                }
+
                 
                 <div className="flex flex-col lg:flex-row lg:gap-[25px] mt-[50px]">
                     
@@ -57,7 +54,7 @@ export default function Info(){
                     <div className="flex-1 mb-[100px] lg:mb-0">
                         <Image className="lg:mb-[20px] mb-[10px] h-[50px] lg:h-auto w-auto" src={Money} height={40} alt="oops"/>
                         <h3 className="text-xl mb-[20px] font-kl uppercase">Step 4: Activate the 8PASS</h3>
-                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Discover a new experience with the 8PASS. Gain early access to gifts, products, apps, special deals, events, and other 8LAB benefits. Expand your network, find new ways to make money, and unlock infinite possibilities for personal and professional growth.</span>
+                        <span className="lg:text-lg text-mobilelg block mb-[15px]">Discover a new experience with the 8PASS. Gain early access to gifts, products, apps, special deals, events, and other 8LAB benefits.</span>
                     </div>
                 </div>
             </div>
