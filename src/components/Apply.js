@@ -20,14 +20,14 @@ export default function Apply(){
                     <h2 className="mb-[25px] mx-[20px]">IF THIS SOUNDS LIKE YOU…</h2>
                     <a href="mailto:hello@8lab.ai"><h2>APPLY</h2></a>
                 </div>
-                <div className="relative z-[100]">
+                <div className="relative z-[1]">
                     <a href="mailto:hello@8lab.ai" className="block w-full h-full rounded-[100%] text-2xl relative hover:cursor-pointer">
                         <Image className="animate-rotate relative lg:w-[250px] lg:h-[250px] w-[150px] h-[150px] mx-auto" src={Logo8} width={250} height={250} alt="oops"/>
                         {/* <Image className="absolute w-[60px] h-[60px] flex align-middle self-center items-center justify-center font-kl font-bold top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] hover:cursor-pointer" src={ApplyPerson} width={64} height={64} alt="oops"/> */}
                     </a>
                 </div>
                 {/* <div className="absolute block w-max top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-                    <Image className="animate-spin lg:w-[450px] w-[300px]" src={Humans} width={450} height={450} alt="oops"/>
+                    <Image className="animate-spin lg:w-[450px] w-[100px]" src={Humans} width={450} height={450} alt="oops"/>
                 </div> */}
                 {/* <div className="absolute block w-max top-[50%] lg:top-[55%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
                     <Image className="animate-reverseSpin lg:w-[275px] w-[200px]" src={Text} width={500} height={500} alt="oops"/>

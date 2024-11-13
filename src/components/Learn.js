@@ -122,13 +122,13 @@ export default function Learn(){
                         
                     >
                     </div> */}
-                    {/* <Parallax className="absolute top-[15%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={top} endScroll={top + 400}>
+                    <Parallax className="absolute top-[15%] left-[63%] rounded-lg z-[1] pointer-events-none" opacity={[1,0]} startScroll={top} endScroll={top + 400}>
                         <Image src={Human} width={220} alt="oops"/>
                         
                     </Parallax>
-                    <Parallax className="absolute top-[30%] left-[60%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={top + 400} endScroll={top + 700}>
+                    <Parallax className="absolute top-[30%] left-[63%] rounded-lg z-[1] pointer-events-none" opacity={[0,1]} startScroll={top + 400} endScroll={top + 700}>
                         <Image src={Brain} width={364} alt="oops"/>
-                    </Parallax> */}
+                    </Parallax>
                     
                 </div>
                 :
